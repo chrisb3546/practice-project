@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
 
-function Search() {  
+function Search(props) {  
     return(
         <div>
-           <input placeholder="Search Movies" onChange={this.props.searchMovies}></input>
+            
+           <input placeholder="Search Movies" onKeyPress={props.searchMovies}></input>
+            
         </div>
     )
 }
